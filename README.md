@@ -1,4 +1,4 @@
-# Simple-AI-Agent
+# Simple-LLM-Agent
 
 This repo based on `Visual Computing Systems Stanford CS348K` course, found at [there](https://gfxcourses.stanford.edu/cs348k/spring24content/media/aiagents1/11_simagents_1_5VsnTc5.pdf).
 
