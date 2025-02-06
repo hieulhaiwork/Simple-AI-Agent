@@ -1,7 +1,8 @@
 # Simple-LLM-Agent
 
-This repo based on `Visual Computing Systems Stanford CS348K` course, found at [there](https://gfxcourses.stanford.edu/cs348k/spring24content/media/aiagents1/11_simagents_1_5VsnTc5.pdf).
+Someone calls AI Agent and the other says LLM Agent. At this time, they're the same thing but to classify them clearly, LLM Agent should be called as LLM-based AI Agent. Understand it? Let's deep dive into the details.
 
+This repo based on `Visual Computing Systems Stanford CS348K` course, found at [there](https://gfxcourses.stanford.edu/cs348k/spring24content/media/aiagents1/11_simagents_1_5VsnTc5.pdf).
 
 |![general-llm-agent-arch](https://github.com/user-attachments/assets/80b923f1-df20-4ce9-8e02-d8b44954f5dc)|
 |:-----------------------------------:|
