@@ -1,14 +1,34 @@
 # Simple-LLM-Agent
 
-Someone calls AI Agent and the other says LLM Agent. At this time, they're the same thing but to classify them clearly, LLM Agent should be called as LLM-based AI Agent. Understand it? Let's deep dive into the details.
+Someone calls AI Agent and the other says LLM Agent. At this time, I would say they're the same thing but to classify them clearly, LLM Agent should be understood as LLM-based AI Agent. For example, in the future, imagine that there would be a machine learning model which can replace the LLM's tasks at present so it might be called ML Agent :)
 
-This repo based on `Visual Computing Systems Stanford CS348K` course, found at [there](https://gfxcourses.stanford.edu/cs348k/spring24content/media/aiagents1/11_simagents_1_5VsnTc5.pdf).
+It's easy to understand, right? Then, let's deep dive into the details.
+
+## I. Intro
+
+Inspired by [Visual Computing Systems Stanford CS348K](https://gfxcourses.stanford.edu/cs348k/spring24content/media/aiagents1/11_simagents_1_5VsnTc5.pdf) course and [What are AI Agents?](https://www.youtube.com/watch?v=F8NKVhkZZWI) from IBM Technology channel, I create this repo as a personal study of AI Agent to answer questions: what is it and how to use it?
+
+*Firstly, what is AI Agent?*
+
+Simply, AI Agent is a software that can make decisions to complete particular tasks without given rules or help of human but through its knowledge and interations with the real world.
+
+*Why AI Agent?*
+
+The need of AI Agent is originated from the limitations of base LLM model:
+- Knowledge (out of date, lack of fields, bias,...)
+- Hard to adapt to particular tasks
+
+## II. Components
 
 |![general-llm-agent-arch](https://github.com/user-attachments/assets/80b923f1-df20-4ce9-8e02-d8b44954f5dc)|
 |:-----------------------------------:|
-|*General LLM Agent Architecture.*|
+|*General LLM-based Agent Architecture.*|
 
-Normally, a complete LLM agent system will include all components such as: Planning to break down large tasks into small tasks, then deciding which tools to use to solve the tasks or using more memory to help the agent store the history of previous interactions with users.
+Normally, a complete LLM agent system will include: 
+- `Planning` to break down large tasks into small tasks, this step's also known as reasoning step - the core of a LLM agent.
+- `Actions` are all things the agent can interact with the world by tools, such as: searching, calculating,....
+- The agent also need to define when to use and how to use `tools` to achieve the best solution.
+- `Memory` is where to store its Chain of thought in the past for future planning or history of chat for personal optimizing.
 
 ### LLM
 
@@ -18,9 +38,7 @@ Input prompt to this LLM is very important to define which plannings, tools or a
 
 ### Planning
 
-This step to divide complex tasks to more simple tasks to get the better solutions. 
-
-Planning usually including: `Planning without feedback` and `Planning with feedback`.
+This step to divide complex tasks to more simple tasks to get the better solutions. Planning usually including: `Planning without feedback` and `Planning with feedback`.
 
 #### Planning without feedback
 - Chain of thoughts
